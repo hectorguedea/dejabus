@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Déjà-bus es una aplicación móvil gratuita que permite conocer de manera exacta los tiempos de llegada de los autobuses urbanos">
+<meta name="keywords" content="Dejabus,  Déjà-bus, transporte público, GPS, autobús, móvil, aplicación">
+<meta name="author" content="App Carlos Hernánez, Web Héctor Guedea">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title> Déjà-bus - Tu destino, sin esperas</title>
+
+<!-- =========================
+      FAVORITOS Y ICONOS TOUCH
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+      OPEN GRAPH Y TWITTER CARD
+============================== -->
+
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:url" content="http://smartbird.com.mx/dejabus" />
+<meta property="og:type"content="website" />
+<meta property="og:title" content="Déjà-bus - Tu destino, sin esperas" />
+<meta property="og:description" content="Déjà-bus es una aplicación móvil gratuita que permite conocer de manera exacta los tiempos de llegada de los autobuses urbanos" />
+<meta property="og:image" content="http://www.smartbird.com.mx/dejabus/images/dejabus-splash.jpg" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@deja_bus">
+<meta name="twitter:creator" content="@h_guedea">
+<meta name="twitter:title" content="Déjà-bus - Tu destino, sin esperas">
+<meta name="twitter:description" content="Déjà-bus es una aplicación móvil gratuita que permite conocer de manera exacta los tiempos de llegada de los autobuses urbanos">
+<meta name="twitter:image" content="http://www.smartbird.com.mx/dejabus/images/dejabus-splash.jpg">
+
+<!-- =========================
+      HOJAS DE ESTILO
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-multiselect.css">
+
+<!-- ICONOS FONT -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link href="assets/app-icons/styles.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL Y LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+
+<!-- ANIMACIONES  -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!-- STYLESHEETS EDITABLE -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- COLORES -->
+<link rel="stylesheet" href="css/colors/blue.css"> 
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<!-- =========================
+     PRE CARGAR       
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+
+<!-- =========================
+     ENCABEZADO    
+============================== -->
+<header class="header" id="inicio">
+
+<!-- COLOR SOBRE LA IMAGEN  -->
+<div class="color-overlay">
+
+	<!-- NEVEGACIÓN (STICKY) -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+				
+				<!-- LOGO STICKY -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dejabus-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#"><img src="images/logo-menu.png" alt=""></a>
+				
+			</div>
+			
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="dejabus-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#descripcion">Qué es</a></li>
+					<li><a href="#funcion">Cómo funciona</a></li>
+                    <li><a href="#rutas">Rutas</a></li>
+					<li><a href="#video">Video</a></li>
+					<li><a href="#testimonios">Testimonios</a></li>
+					<li><a href="#descargar">Descargar</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</div>
+		</div> <!-- /FIN DEL CONTAINER -->
+	</div> <!-- /FIN  NAVIGATION (STICKY) -->
+	
+	
+	<!-- CONTAINER -->
+	<div class="container">
+		
+		<!-- LOGO EN EL ENCABEZADO -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<img src="images/dejabus-logo.png" alt="">
+				</div>
+			</div>
+		</div> <!-- /FIN LOGO ENCABEZADO -->
+		
+		<div class="row home-contents">
+			<div class="col-md-6 col-sm-6">
+				
+				<!-- SLOGAN Y BOTONES  -->
+				<div class="intro-section">
+					
+					<!-- SLOGAN CORTO -->
+					<h1 class="intro">Tu destino, sin esperas</h1>
+					<h5>Disponible <strong>gratis</strong> en App Store, Play Store y Microsoft Store</h5>
+					
+					<!-- BOTÓN -->
+					<div class="buttons" id="download-button">
+						
+						<a href="#descargar" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>Descargar App</a>
+						
+					</div>
+					<!-- /FIN DE BOTONES -->
+					
+				</div>
+				<!-- /FIN SLOGAN Y BOTONES -->
+				
+			</div>
+			
+			
+			<div class="col-md-6 col-sm-6 hidden-xs">
+			    
+			    <!-- CELULARES, CLASS HIDDEN EN MÓVIL-->
+			    <div class="phone-image">
+			    <img src="images/samsung-iphone-derecha.png" class="img-responsive" alt="">
+			    </div>
+			    
+			</div>
+			
+		</div>
+		<!-- /FIN ROW -->
+		
+	</div>
+	<!-- /FIN CONTAINER -->
+</div>
+<!-- /FIN CLASS COLOR-OVERLAY -->
+</header>
+<!-- /FIN ENCABEZADO -->
+
+<!-- =========================
+     DESCRIPCIÓN GENERAL DE LA APP 
+============================== -->
+<section class="features" id="descripcion">
+
+<div class="container">
+	
+	<!-- SECCIÓN ENCABEZADO -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+		
+		<!-- SECCIÓN TÍTULO -->
+		<h2 class="dark-text">Conoce  Déjà-bus</h2>
+		<div class="colored-line">
+		</div>
+		<div class="section-description">La forma ágil y rápida de saber las próximas llegadas del autobús</div>
+		<div class="colored-line">
+		</div>
+	</div>
+	<!-- /FIN ENCABEZADO -->
+	
+	
+	<div class="row">
+		
+		<!-- FUNCIONALIDADES IZQUIERDA -->
+		<div class="col-md-4 col-sm-4 features-left wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- FUNCIONALIDAD #1S -->
+			<div class="feature">
+				
+				<!-- ICONO -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_map_alt"></i>
+					</div>
+				</div>
+				
+				<!-- TITULO Y DESCRIPCIÓN -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Tu guia de viaje</h4>
+					<p>
+						Te permite guardar en favoritos tus rutas y tiempos de llegada del autobús.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /FIN FUNCIONALIDAD #1 -->
+			
+			<!-- FUNCIONALIDAD #2 -->
+			<div class="feature">
+				
+				<!-- ICONO -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class=" icon_like"></i>
+					</div>
+				</div>
+				
+				<!-- TITULO Y DESCRIPCIÓN -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Menos tiempo de espera</h4>
+					<p>
+						Conocerás el minuto exacto de llegada del autobús en la ubicación que te encuentres.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /FIN FUNCIONALIDAD #2 -->
+			
+			<!-- FUNCIONALIDAD #3 -->
+			<div class="feature">
+				
+				<!-- ICONO -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_mobile"></i>
+					</div>
+				</div>
+				
+				<!-- TITULO Y DESCRIPCIÓN-->
+				<div class="fetaure-details">
+					<h4 class="main-color">Multi-plataforma</h4>
+					<p>
+						Diseñamos una app útil para multiples plataformas móviles: Android, iOS y Windows Phone.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /FIN FUNCIONALIDAD #3 -->
+			
+		</div>
+		<!-- /FIN FUNCIONALIDADES IZQUIERDA -->
+		
+		<!-- IMAGEN CEL -->
+		<div class="col-md-4 col-sm-4">
+			<div class="phone-image wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+				<img src="images/iphone.png" alt="">
+			</div>
+		</div>
+		
+		<!-- FUNCIONALIDADES DERECHA -->
+		<div class="col-md-4 col-sm-4 features-right wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- FUNCIONALIDAD #1 -->
+			<div class="feature">
+				
+				<!-- ICONO -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class=" icon_tools"></i>
+					</div>
+				</div>
+				
+				<!-- TITULO Y DESCRIPCIÓN -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Fácil de usar</h4>
+					<p>
+						 Sin escribir, sin teclear, el GPS detecará tu ubicación y te proporcionará las próximas llegadas.
+					</p>
+				</div>
+				
+			</div>
+			<!-- /FIN FUNCIONALIDAD #1 -->
+			
+			<!-- FUNCIONALIDAD #2 -->
+			<div class="feature">
+				
+				<!-- ICONO -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_lightbulb_alt"></i>
+					</div>
+				</div>
+				
+				<!-- TITULO Y DESCRIPCIÓN -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Diseño intuitivo</h4>
+					<p>
+						Los pasos son sencillos. Un mapa te brindará la información de tu ubicación y la lista de autobuses.
+					</p>
+				</div>
+				
+			</div>
+			
+			<!-- /FIN FUNCIONALIDAD #2 -->
+			
+			<!-- FUNCIONALIDAD #3 -->
+			<div class="feature">
+				
+				<!-- ICONO -->
+				<div class="icon-container">
+					<div class="icon">
+						<i class="icon_ribbon_alt"></i>
+					</div>
+				</div>
+				
+				<!-- TITULO Y DESCRIPCIÓN -->
+				<div class="fetaure-details">
+					<h4 class="main-color">Mayor productividad</h4>
+					<p>
+						Ya no perderás el tiempo en esperar el autobús. 
+					</p>
+				</div>
+				
+			</div>
+			<!-- /FIN FUNCIONALIDAD #3 -->
+			
+		</div>
+		<!-- /FIN FUNCIONALIDADES IZQUIERDA -->
+		
+	</div>
+	<!-- /FIN ROW -->
+	
+</div>
+<!-- /FIN CONTAINER -->
+
+</section>
+<!-- /FIN SECCIÓN FUNCIONALIDADES -->
+
+
+<!-- =========================
+   DESCRIPCIÓN BREVE IZQUIERDA
+============================== -->
+<section class="app-brief grey-bg" id="funcion">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- IMAGENES CELULARES IZQUIERDA  -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="phone-image">
+				<img src="images/iphones-izquierda.png" alt="">
+			</div>
+		</div>
+		
+		<!-- DESCRIPCIÓN  -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- TITULO -->
+			<h2 class="dark-text">La mejor forma de usar el autobús</h2>
+			
+			<div class="colored-line-left">
+			</div>
+			
+			<p>
+				Si eres estudiante, ama de casa, empresario o simplemente eres un usuario común del transporte público, ¡tenemos lo que buscabas!. 
+			</p>
+			
+			<!-- LISTA DE FUNCIONALIDADES  -->
+			<ul class="feature-list">
+             <li><i class="icon_gift_alt"></i> App totalmente gratuita!</li>
+                <li><i class="icon_check_alt2"></i> Organiza tu tiempo facilmente.</li>
+				<li><i class="icon_lock_alt"></i> Guarda la lista de rutas de autobús en tus favoritos.</li>
+                <li><i class=" icon_question_alt2"></i> Actualmente funciona para las ciudades de Colima, Tecomán, Manzanillo y México.</li>
+                
+				
+				
+			</ul>
+			
+		</div>
+		<!-- /FIN DESCRIPCIÓN BREVE IZQUIERDA -->
+		
+	</div>
+	<!-- /FIN ROW -->
+	
+</div>
+<!-- /FIN CONTAINER -->
+
+</section>
+<!-- /FIN SECTION -->
+
+
+<!-- =========================
+    DESCRIPCIÓN BREVE DERECHA
+============================== -->
+<section class="app-brief" id="funcion2">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- DESCRIPCIÓN -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!--  TITULO -->
+			<h2 class="dark-text">Tu agenda de viaje en la palma de tu mano</h2>
+			
+			<div class="colored-line-left">
+			</div>
+			
+			<p>
+				 ¿Con cuánto tiempo de anticipación sale usted de su casa para tomar el camión? <br/>
+
+Desde ahora esto ya no será un problema,  Déjà-bus le permitirá saber, casi con exactitud, donde está la ruta que usted tanto espera.
+
+			</p>
+			
+		</div>
+		<!-- /FIN DESCRIPCION -->
+		
+		<!-- IMAGENES CEL IZQUIERDA -->
+		<div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+			<div class="phone-image">
+				<img src="images/androids-derecha.png" alt="">
+			</div>
+		</div>
+		<!-- /FIN IMAGENES CEL -->
+		
+	</div>
+	<!-- /FIN ROW -->
+	
+</div>
+<!-- /FIN CONTAINER -->
+
+</section>
+<!-- /FIN SECTION -->
+
+
+<!-- =========================
+     RUTAS
+============================== -->
+<section class="app-brief " id="rutas">
+
+
+	<!-- CONTENEDOR MAPA -->
+		
+        
+       <div class="container-maps wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">		
+           
+       			<div class="cities"> <!-- CITIES --> 
+         
+                <!-- TÍTULO -->
+                <h3 class="dark-text hidden-xs">Descubre las rutas de Déjà-bus</h3>
+                
+                <div class="colored-line hidden-xs">
+                </div>
+	
+    			<!-- DROPDOWN -->
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-primary btn-cities">Ciudades</button>
+                  <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu" id="cities">
+                    <li><a tabindex="-1" data-value="colima" href="#" >Colima</a></li>
+                    <li><a tabindex="-1" data-value="tecoman" href="#" >Tecomán</a></li>
+                    <li><a tabindex="-1" data-value="manzanillo" href="#">Manzanillo</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a tabindex="-1" data-value="mexico" href="#">Ciudad de México</a></li>
+                  </ul>
+                </div>
+                <!-- FIN DROPDOWN -->
+                
+                <div class="rutas-div">
+                <select id="rutas-dir" multiple="multiple" class="form-control">
+                    
+                </select>
+                </div>
+                
+                </div> <!-- FIN CITIES -->
+                
+                
+                               
+    <!-- INICIA MAPA -->
+    <div id="map"></div>
+  
+  </div>
+ <!-- / FIN CONTENEDOR MAPA -->
+
+</section>
+
+
+<!-- =========================
+     DESCRIPCIÓN BREVE CON VIDEO
+============================== -->
+<section class="app-brief grey-bg" id="video">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- VIDEO  -->
+		<div class="col-md-6">
+			<div class="video-container">
+            
+				<div class="video embed-responsive embed-responsive-4by">
+					
+					<iframe class="embed-responsive-item" width="640" height="360" src="//www.youtube.com/embed/c_XOjW9I87U" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div> <!-- /FIN VIDEO -->
+		
+		<!-- DESCRIPCIÓN VIDEO DERECHA -->
+		<div class="col-md-6 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- TITULO -->
+			<h2 class="dark-text">¿Tienes dudas?</h2>
+			
+			<div class="colored-line-left">
+			</div>
+			
+			<p>
+			
+             Conoce nuestro <a href="https://docs.google.com/presentation/d/1CeABgl9HvSbRSt0hCgEb8tyvZeLdc1ZjJLGfz36rYvE/pub?start=true&loop=false&delayms=3000" target="_blank"><strong>manual de uso</strong></a> para aclarar todas tus dudas.<br/>
+                
+                 No esperes más.  Déjà-bus es la solución. <br/>
+                <div class="buttons" id="download-button">
+						
+						<a href="#descargar" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>Descargar App</a>
+						
+					</div>
+			</p>
+			
+			
+		</div>
+		<!-- /FIN DESCRIPCIÓN VIDEO DERECHA -->
+		
+	</div>
+	<!-- /FIN ROW -->
+	
+</div>
+<!-- /FIN CONTAINER -->
+
+</section>
+<!-- /FIN SECTION -->
+
+<!-- =========================
+     TESTIMONIOS 
+============================== -->
+<section class="testimonials" id="testimonios">
+
+<div class="color-overlay">
+	
+	<div class="container wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- TESTIMONIOS -->
+		<div id="feedbacks" class="owl-carousel owl-theme">
+        
+        
+        
+      
+        
+        <!-- TESTIMONIO #4 -->
+			<div class="feedback">
+				
+				<!-- FOTO -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/4.jpg" alt="Tochtli Fabian">
+				</div>
+				
+				<div class="message">
+					Excelente app y muy util!, al menos aquí en Colima es de gran ayuda, debido a que el sistema de camiones urbanos es muy tardado. Con esta app no pierdes tu tiempo esperando.
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMACIÓN -->
+				<div class="name">
+					Tochtli Fabian
+				</div>
+				<div class="company-info">
+					Usuario de  Déjà-bus
+				</div>
+				
+			</div>
+			<!-- /FIN TESTIMONIO #4 -->
+            
+            
+               <!-- TESTIMONIO #5 -->
+			<div class="feedback">
+				
+				<!-- FOTO -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/6.jpg" alt="Carlos Pérez H.">
+				</div>
+				
+				<div class="message">
+					Esta App es una maquina!! muy buena, desde que la instale ya no sufro más, gracias Dejabus!
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMACIÓN -->
+				<div class="name">
+					Carlos Pérez H.
+				</div>
+				<div class="company-info">
+					Usuario de  Déjà-bus
+				</div>
+				
+			</div>
+			<!-- /FIN TESTIMONIO #5 -->
+            
+              <!-- TESTIMONIO #6 -->
+			<div class="feedback">
+				
+				<!-- FOTO -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/5.jpg" alt="Alicia Cornejo">
+				</div>
+				
+				<div class="message">
+				Ahora ya no me estreso y si se me hace tarde sé si la espero o tomo taxi. Muy útil en verdad, ya se cuánto dura mi ruta en pasar.
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMACIÓN -->
+				<div class="name">
+					Alicia Cornejo
+				</div>
+				<div class="company-info">
+					Usuaria de  Déjà-bus
+				</div>
+				
+			</div>
+			<!-- /FIN TESTIMONIO #6 -->
+        
+			
+			<!-- TESTIMONIO #1 -->
+			<div class="feedback">
+				
+				<!-- FOTO -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/1.jpg" alt="Max Contreras">
+				</div>
+				
+				<div class="message">
+					Fui de vacaciones a Colima, me recomendarion esta App y me ayudó mucho! 
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMACIÓN -->
+				<div class="name">
+					Max Contreras
+				</div>
+				<div class="company-info">
+					Usuario de  Déjà-bus
+				</div>
+				
+			</div>
+			<!-- /FIN TESTIMONIO #1 -->
+			
+			<!-- TESTIMONIO #2 -->
+			<div class="feedback">
+				
+				<!-- FOTO -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/2.jpg" alt="Roberto Ibañez">
+				</div>
+				
+				<div class="message">
+					 Genial!, la mejor! Yo soy de Colima y esta aplicación me ha ayudado mucho para saber el horario de los camiones, sin duda alguna recomiendo ampliamente. 
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMACIÓN -->
+				<div class="name">
+					Roberto Ibañez
+				</div>
+				<div class="company-info">
+					Usuario de  Déjà-bus
+				</div>
+				
+			</div>
+			<!-- /FIN TESTIMONIO #2 -->
+			
+			<!-- TESTIMONIO #3 -->
+			<div class="feedback">
+				
+				<!-- FOTO -->
+				<div class="image">
+					<!-- i class=" icon_quotations"></i -->
+					<img src="images/clients-pic/3.jpg" alt="Salvador Zendejas">
+				</div>
+				
+				<div class="message">
+					 Felicidades a los desarrolladores, muy usable y sin errores!
+				</div>
+				
+				<div class="white-line">
+				</div>
+				
+				<!-- INFORMACIÓN -->
+				<div class="name">
+					Salvador Zendejas
+				</div>
+				<div class="company-info">
+					Usuario de  Déjà-bus
+				</div>
+				
+			</div>
+			<!-- /FIN TESTIMONIO #3 -->
+			
+		</div>
+		<!-- /FIN TESTIMONIOS -->
+		
+	</div>
+	<!-- /FIN CONTAINER -->
+	
+</div>
+<!-- /FIN COLOR OVERLAY -->
+
+</section>
+<!-- /FIN SECTION TESTIMONIO -->
+
+
+<!-- =========================
+     SERVICIOS
+============================== -->
+<section class="services" id="services">
+
+<div class="container">
+	
+	<!-- ENCABEZADO SERVICIOS -->
+	<div class="section-header wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- TÍTULO -->
+		<h2 class="dark-text">Es increíble!</h2>
+		
+		<div class="colored-line">
+		</div>
+		<div class="section-description">
+			 Déjà-bus ha sido nombrada por la prensa como la innovación tecnológica al alcance de todos. 
+		</div>
+		<div class="colored-line">
+		</div>
+		
+	</div>
+	<!-- /FIN ENCABEZADO SERVICIOS -->
+	
+	<div class="row">
+		
+		<!-- PRENSA #1 -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- LOGO -->
+			
+            <div class="image">
+            <img src="images/prensa-logos/logo_forbes.jpg" alt="Forbes México">
+            </div>
+				<!--<i class="icon_cloud-upload_alt"></i>-->
+		
+			
+			<!-- TITULO -->
+			<h3>Forbes México</h3>
+			
+			<!-- DESCRIPCIÓN -->
+			<p>
+				 "No hay ningún otro país con una aplicación así, es un invento mexicano, hecho por mexicanos que estudiaron en Estados Unidos becados por el Conacyt."
+			</p>
+			
+		</div>
+		<!-- /FIN PRENSA #1 -->
+		
+		<!-- PRENSA #2-->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- LOGO -->
+			<div class="image">
+				    <img src="images/prensa-logos/logo_milenio.jpg" alt="Milenio">
+			</div>
+			
+			<!-- TITULO -->
+			<h3>Milenio</h3>
+			
+			<!-- DESCRIPCIÓN -->
+			<p>
+				"Crean app para que no te deje el autobus. La app permite conocer el tiempo de llegada del autobús a la parada de interés dentro de los siguientes 30 minutos."
+			</p>
+			
+		</div>
+		<!-- /FIN PRENSA #2-->
+		
+		<!-- PRENSA #3 -->
+		<div class="col-md-4 single-service wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- LOGO -->
+			<div class="image">
+				    <img src="images/prensa-logos/logo_eluniversal.jpg" alt="El Universal">
+			</div>
+			
+			<!-- TITULO -->
+			<h3>El Universal</h3>
+			
+			<!-- DESCRIPCIÓN -->
+			<p>
+				 
+"Es inédito, no sólo en el país, sino en el mundo... identificar rutas reales, tiempos de llegada y traslados, a través del móvil".
+			</p>
+			
+		</div>
+		<!-- /FIN PRENSA #3 -->
+		
+	</div>
+	<!-- /FIN ROW -->
+	
+</div>
+<!-- /FIN CONTAINER -->
+
+</section>
+<!-- /FIN SECCIÓN SERVICIOS  -->
+
+<!-- =========================
+     DESCARGAR 
+============================== -->
+<section class="download" id="descargar">
+
+<div class="color-overlay">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- BOTONES DE DESCARGA  -->
+				<div class="download-container">
+					<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Descarga ya!</h2>
+					
+					<!-- BOTONES -->
+					<div class="buttons wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+						
+						<a href="https://itunes.apple.com/mx/app/dejabus/id796694781?mt=8" class="btn btn-default btn-lg standard-button"><i class="icon-app-store"></i>App Store</a>
+						<a href="https://play.google.com/store/apps/details?id=com.vanillasys.dejabus&hl=es_419" class="btn btn-default btn-lg standard-button"><i class="icon-google-play"></i>Play Store</a>
+                        <a href="https://www.microsoft.com/en-us/store/apps/Deja-bus/9nblggh0gggw" class="btn btn-default btn-lg standard-button"><i class="icon-ms-store"></i>Microsoft Store</a>
+						
+					</div>
+					<!-- /FIN BOTONES -->
+					
+				</div>
+				<!-- FIN DESCARGAS BOTONES -->
+				
+				
+				<!-- SUSCRIBIRSE  -->
+				<div class="subscription-form-container">
+					
+					<h2 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">Suscríbete Ahora!</h2>
+					
+					<!-- =====================
+					     MAILCHIMP  
+					     ===================== -->
+					
+					<form class="subscription-form mailchimp form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" role="form">
+						
+						<!-- MENSAJES DE ERROR O EXITO  -->
+						<h4 class="subscription-success"></h4>
+						<h4 class="subscription-error"></h4>
+						
+						<!-- EMAIL-->
+						<input type="email" name="email" id="subscriber-email" placeholder="Tu email" class="form-control input-box">
+						
+						<!-- BOTÓN SUSCRIBIRSE -->
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">Suscribirse</button>
+						
+					</form>
+					<!-- /FIN MAILCHIMP -->
+					
+				
+
+				</div>
+                <!-- FIN AREA DE SUSCRIPCIÓN-->
+				
+			</div> 
+			<!-- FIN COLUMNA -->
+			
+		</div> 
+		<!-- FIN ROW -->
+		
+	</div>
+	<!-- /FIN CONTAINER -->
+</div>
+<!-- /FIN COLOR OVERLAY -->
+
+</section>
+<!-- /FIN SECCIÓN DESCARGAS -->
+
+
+<!-- =========================
+     FOOTER 
+============================== -->
+<footer>
+
+<div class="container" id="contacto">
+	
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+		
+		<!-- FORMULARIO DE CONTACTO -->
+		
+		<a class="btn contact-button expand-form expanded"><i class="icon_mail_alt"></i></a>
+		
+		<!-- EXPANDIR CONTACT FORM -->
+		<div class="row expanded-contact-form" >
+			
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- FORMULARIO -->
+				<form class="contact-form" id="contact" role="form">
+					
+					<!-- SI EL EMAIL SE ENVIA -->
+					<h4 class="success">
+						<i class="icon_check"></i> Tu mensaje se ha enviado.
+					</h4>
+					
+					<!-- SI NO SE ENVIA -->
+					<h4 class="error">
+						<i class="icon_error-circle_alt"></i> Correo electrónico o mensaje invalido.
+					</h4>
+					
+					<div class="col-md-6">
+						<input class="form-control input-box" id="name" type="text" name="name" placeholder="Tu Nombre">
+					</div>
+					
+					<div class="col-md-6">
+						<input class="form-control input-box" id="email" type="email" name="email" placeholder="Tu Email">
+					</div>
+					
+					<div class="col-md-12">
+						<input class="form-control input-box" id="subject" type="text" name="subject" placeholder="Asunto">
+						<textarea class="form-control textarea-box" id="message" rows="8" placeholder="Mensaje"></textarea>
+					</div>
+					
+					<button class="btn btn-primary standard-button2 ladda-button" type="submit" id="submit" name="submit" data-style="expand-left">Enviar Mensaje</button>
+					
+				</form>
+				<!-- /FIN FORMULARIO -->
+				
+			</div>
+			
+		</div>
+		<!-- /FIN EXPANDIR CONTACT FORM -->
+		
+	</div>
+	<!-- /FIN AREA DE CONTACTO -->
+	
+	<!-- LOGO -->
+	<img src="images/logo-black.png" alt="LOGO" class="responsive-img">
+	
+	<!-- ICONOS SOCIALES  -->
+	<ul class="social-icons">
+		<li><a href="https://www.facebook.com/DejaBusMexico/"><i class="social_facebook_square"></i></a></li>
+		<li><a href="https://twitter.com/deja_bus"><i class="social_twitter_square"></i></a></li>
+		<li><a href="https://www.youtube.com/channel/UCmNPWcfEFTygBey6SJOuK1A"><i class="social_youtube_square"></i></a></li>
+		
+	</ul>
+	
+	<!-- DERECHOS DE AUTOR -->
+	<p class="copyright">
+		©2016  Déjà-bus, todos los derechos reservados<br/>
+        Desarrollo Web por Héctor Guedea
+	</p>
+
+</div>
+<!-- /FIN CONTAINER -->
+ 
+</footer>
+<!-- /FIN FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5440229-23', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-multiselect.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.backgroundvideo.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="http://geoxml3.googlecode.com/svn/branches/polys/geoxml3.js"></script>
+<script src="http://geoxml3.googlecode.com/svn/trunk/ProjectedOverlay.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>
